@@ -20,12 +20,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
-//	    Util.printFormattedList(repository.findByDate(LocalDate.of(2020, 11, 5)));
-//        Util.printFormattedList(repository.findByYear(2020));
-
-
-
         Integer year = selecionaAno();
 
         if (year == 1)
