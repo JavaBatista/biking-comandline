@@ -1,5 +1,7 @@
 package com.javabatista.biking.domain;
 
+import com.javabatista.biking.Util;
+
 import java.time.Duration;
 import java.time.LocalDate;
 
@@ -39,5 +41,21 @@ public class CyclingStats {
 
     public void setTotalTime(Duration totalTime) {
         this.totalTime = totalTime;
+    }
+
+    public CyclingStats(LocalDate date, Integer totalDays, Double totalDistance, Duration totalTime) {
+        this.date = date;
+        this.totalDays = totalDays;
+        this.totalDistance = totalDistance;
+        this.totalTime = totalTime;
+    }
+
+    @Override
+    public String toString() {
+        return "CyclingStats{" +
+                "totalDays=" + totalDays +
+                ", totalDistance=" + totalDistance + " Km"+
+                ", totalTime=" + Util.durationToString(totalTime) +
+                '}';
     }
 }
