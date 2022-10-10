@@ -3,7 +3,9 @@ package com.javabatista.biking.repository;
 import com.javabatista.biking.domain.CyclingDay;
 
 import java.time.LocalDate;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class CyclingDayRepository {
@@ -28,6 +30,15 @@ public class CyclingDayRepository {
          return byYear.stream().filter(
                  cyclingDay -> cyclingDay.getDate().getMonth() == date.getMonth()
          ).collect(Collectors.toList());
+    }
+
+    public Set<Integer> findYears() {
+        Set<Integer> years = new HashSet<>();
+        for (CyclingDay cyclingDay: cyclingDayList) {
+            years.add(cyclingDay.getDate().getYear());
+        }
+
+        return  years;
     }
 
 }
