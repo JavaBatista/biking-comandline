@@ -1,4 +1,4 @@
-package com.javabatista.biking.model;
+package com.javabatista.biking.domain;
 
 import java.time.Duration;
 import java.time.LocalDate;

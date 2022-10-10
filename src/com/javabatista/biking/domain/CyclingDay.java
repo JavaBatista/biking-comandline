@@ -1,4 +1,4 @@
-package com.javabatista.biking.model;
+package com.javabatista.biking.domain;
 
 import java.time.Duration;
 import java.time.Instant;
@@ -18,6 +18,30 @@ public class CyclingDay {
     private String comments;
     private Duration duration;
     private Double cyclingQuality;
+
+    public CyclingDay(LocalDate date,
+                      Instant startTime,
+                      Instant finishTime,
+                      LocalTime cyclingTime,
+                      Double distance,
+                      Double odometer,
+                      Double maxSpeed,
+                      Double avgSpeed,
+                      WindCondition windCondition, String comments) {
+
+        this.date = date;
+        this.startTime = startTime;
+        this.finishTime = finishTime;
+        this.cyclingTime = cyclingTime;
+        this.distance = distance;
+        this.odometer = odometer;
+        this.maxSpeed = maxSpeed;
+        this.avgSpeed = avgSpeed;
+        this.windCondition = windCondition;
+        this.comments = comments;
+        this.duration = Duration.between(startTime, finishTime);
+        this.cyclingQuality = distance * avgSpeed;
+    }
 
     public LocalDate getDate() {
         return date;
@@ -105,5 +129,23 @@ public class CyclingDay {
 
     public void setComments(String comments) {
         this.comments = comments;
+    }
+
+    @Override
+    public String toString() {
+        return "CyclingDay{" +
+                "date=" + date +
+                ", startTime=" + startTime +
+                ", finishTime=" + finishTime +
+                ", cyclingTime=" + cyclingTime +
+                ", distance=" + distance +
+                ", odometer=" + odometer +
+                ", maxSpeed=" + maxSpeed +
+                ", avgSpeed=" + avgSpeed +
+                ", windCondition=" + windCondition +
+                ", comments='" + comments + '\'' +
+                ", duration=" + duration +
+                ", cyclingQuality=" + cyclingQuality +
+                '}';
     }
 }

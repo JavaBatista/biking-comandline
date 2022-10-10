@@ -1,4 +1,4 @@
-package com.javabatista.biking.model;
+package com.javabatista.biking.domain;
 
 public enum WindCondition {
     WEAK("Fraco"),
