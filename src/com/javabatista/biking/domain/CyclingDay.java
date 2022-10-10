@@ -5,6 +5,8 @@ import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+import static com.javabatista.biking.Util.*;
+
 public class CyclingDay {
     private LocalDate date;
     private Instant startTime;
@@ -134,17 +136,17 @@ public class CyclingDay {
     @Override
     public String toString() {
         return "CyclingDay{" +
-                "date=" + date +
+                "date=" + localDateFormatter(date) +
                 ", startTime=" + startTime +
                 ", finishTime=" + finishTime +
-                ", cyclingTime=" + cyclingTime +
+                ", cyclingTime=" + localTimeFormatter(cyclingTime) +
                 ", distance=" + distance +
                 ", odometer=" + odometer +
                 ", maxSpeed=" + maxSpeed +
                 ", avgSpeed=" + avgSpeed +
                 ", windCondition=" + windCondition +
                 ", comments='" + comments + '\'' +
-                ", duration=" + duration +
+                ", duration=" + durationToString(duration) +
                 ", cyclingQuality=" + cyclingQuality +
                 '}';
     }
