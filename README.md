@@ -1,2 +1,2 @@
 # biking-comandline
-Armazena e gerecia os dados dos dias em que se utilizou a bicicleta. 
+Programa em linha de comando que permite armazena e gerenciar os dados dos dias em que o usuário utilizou a bicicleta. 
