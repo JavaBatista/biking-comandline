@@ -20,4 +20,14 @@ public class CyclingDayRepository {
                 ).collect(Collectors.toList());
     }
 
+    public List<CyclingDay> findByMonthOfYear(LocalDate date) {
+         List<CyclingDay> byYear = cyclingDayList.stream().filter(
+                cyclingDay -> cyclingDay.getDate().getYear() == date.getYear()
+        ).collect(Collectors.toList());
+
+         return byYear.stream().filter(
+                 cyclingDay -> cyclingDay.getDate().getMonth() == date.getMonth()
+         ).collect(Collectors.toList());
+    }
+
 }
