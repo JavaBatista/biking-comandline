@@ -41,7 +41,7 @@ public class CyclingDayList {
     static  {
         cyclingDayList = Arrays.asList(
                 createCyclingDay(
-                    LocalDate.of(2020, 9, 17),
+                    LocalDate.of(2021, 9, 17),
                     LocalTime.of(8, 20, 30),
                     LocalTime.of(9, 37, 0),
                     LocalTime.of(1, 7, 0),
@@ -49,7 +49,7 @@ public class CyclingDayList {
                     ""
                 ),
                 createCyclingDay(
-                        LocalDate.of(2020, 9, 18),
+                        LocalDate.of(2021, 9, 18),
                         LocalTime.of(8, 0, 7),
                         LocalTime.of(8, 50, 45),
                         LocalTime.of(0, 50, 26),
@@ -58,7 +58,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2020, 9, 30),
+                        LocalDate.of(2021, 9, 30),
                         LocalTime.of(7, 50, 25),
                         LocalTime.of(9, 11, 10),
                         LocalTime.of(1, 21, 19),
@@ -67,7 +67,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2020, 10, 1),
+                        LocalDate.of(2021, 10, 1),
                         LocalTime.of(7, 30, 14),
                         LocalTime.of(8, 3, 10),
                         LocalTime.of(0, 32, 39),
@@ -76,7 +76,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2020, 10, 4),
+                        LocalDate.of(2021, 10, 4),
                         LocalTime.of(8, 0, 25),
                         LocalTime.of(9, 18, 10),
                         LocalTime.of(1, 17, 10),
@@ -85,7 +85,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2020, 10, 21),
+                        LocalDate.of(2021, 10, 21),
                         LocalTime.of(8, 10, 18),
                         LocalTime.of(9, 35, 10),
                         LocalTime.of(1, 24, 20),
@@ -94,7 +94,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2020, 10, 30),
+                        LocalDate.of(2021, 10, 30),
                         LocalTime.of(7, 50, 25),
                         LocalTime.of(8, 56, 47),
                         LocalTime.of(1, 6, 50),
@@ -103,7 +103,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2020, 11, 5),
+                        LocalDate.of(2021, 11, 5),
                         LocalTime.of(7, 0, 5),
                         LocalTime.of(8, 18, 10),
                         LocalTime.of(1, 17, 5),
@@ -112,7 +112,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2020, 11, 10),
+                        LocalDate.of(2021, 11, 10),
                         LocalTime.of(7, 47, 5),
                         LocalTime.of(8, 49, 10),
                         LocalTime.of(1, 1, 40),
@@ -121,7 +121,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2020, 12, 5),
+                        LocalDate.of(2021, 12, 5),
                         LocalTime.of(7, 50, 10),
                         LocalTime.of(9, 2, 41),
                         LocalTime.of(1, 11, 59),
@@ -130,7 +130,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2020, 12, 8),
+                        LocalDate.of(2021, 12, 8),
                         LocalTime.of(8, 0, 12),
                         LocalTime.of(9, 10, 41),
                         LocalTime.of(1, 9, 36),
@@ -139,7 +139,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2020, 12, 12),
+                        LocalDate.of(2021, 12, 12),
                         LocalTime.of(8, 0, 58),
                         LocalTime.of(9, 42, 41),
                         LocalTime.of(1, 20, 27),
@@ -148,7 +148,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2020, 12, 18),
+                        LocalDate.of(2021, 12, 18),
                         LocalTime.of(8, 10, 12),
                         LocalTime.of(9, 28, 0),
                         LocalTime.of(1, 17, 36),
@@ -157,7 +157,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2020, 12, 19),
+                        LocalDate.of(2021, 12, 19),
                         LocalTime.of(7, 20, 59),
                         LocalTime.of(8, 28, 0),
                         LocalTime.of(1, 8, 9),
@@ -166,7 +166,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2020, 12, 22),
+                        LocalDate.of(2021, 12, 22),
                         LocalTime.of(7, 45, 18),
                         LocalTime.of(8, 49, 50),
                         LocalTime.of(1, 4, 37),
@@ -175,7 +175,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2020, 12, 24),
+                        LocalDate.of(2021, 12, 24),
                         LocalTime.of(8, 10, 14),
                         LocalTime.of(9, 14, 50),
                         LocalTime.of(1, 3, 22),
@@ -184,7 +184,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2020, 12, 26),
+                        LocalDate.of(2021, 12, 26),
                         LocalTime.of(7, 55, 30),
                         LocalTime.of(9, 56, 50),
                         LocalTime.of(1, 1, 14),
@@ -193,7 +193,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2021, 1, 7),
+                        LocalDate.of(2022, 1, 7),
                         LocalTime.of(7, 33, 18),
                         LocalTime.of(8, 36, 47),
                         LocalTime.of(1, 3, 30),
@@ -202,7 +202,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2021, 1, 8),
+                        LocalDate.of(2022, 1, 8),
                         LocalTime.of(7, 58, 32),
                         LocalTime.of(9, 3, 47),
                         LocalTime.of(1, 4, 46),
@@ -211,7 +211,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2021, 1, 19),
+                        LocalDate.of(2022, 1, 19),
                         LocalTime.of(8, 0, 15),
                         LocalTime.of(9, 6, 47),
                         LocalTime.of(1, 6, 18),
@@ -220,7 +220,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2021, 1, 21),
+                        LocalDate.of(2022, 1, 21),
                         LocalTime.of(8, 10, 29),
                         LocalTime.of(9, 19, 47),
                         LocalTime.of(1, 8, 43),
@@ -229,7 +229,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2021, 1, 27),
+                        LocalDate.of(2022, 1, 27),
                         LocalTime.of(8, 20, 10),
                         LocalTime.of(9, 29, 55),
                         LocalTime.of(1, 8, 48),
@@ -238,7 +238,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2021, 1, 31),
+                        LocalDate.of(2022, 1, 31),
                         LocalTime.of(8, 15, 58),
                         LocalTime.of(9, 22, 55),
                         LocalTime.of(1, 5, 49),
@@ -247,7 +247,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2021, 2, 2),
+                        LocalDate.of(2022, 2, 2),
                         LocalTime.of(7, 55, 19),
                         LocalTime.of(8, 58, 36),
                         LocalTime.of(1, 2, 37),
@@ -256,7 +256,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2021, 2, 5),
+                        LocalDate.of(2022, 2, 5),
                         LocalTime.of(7, 25, 17),
                         LocalTime.of(8, 31, 46),
                         LocalTime.of(1, 5, 12),
@@ -265,7 +265,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2021, 2, 7),
+                        LocalDate.of(2022, 2, 7),
                         LocalTime.of(7, 10, 13),
                         LocalTime.of(8, 32, 36),
                         LocalTime.of(1, 21, 59),
@@ -274,7 +274,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2021, 2, 13),
+                        LocalDate.of(2022, 2, 13),
                         LocalTime.of(7, 30, 19),
                         LocalTime.of(8, 57, 5),
                         LocalTime.of(1, 26, 46),
@@ -283,7 +283,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2021, 2, 14),
+                        LocalDate.of(2022, 2, 14),
                         LocalTime.of(7, 0, 19),
                         LocalTime.of(8, 23, 36),
                         LocalTime.of(1, 22, 35),
@@ -292,7 +292,7 @@ public class CyclingDayList {
                 ),
 
                 createCyclingDay(
-                        LocalDate.of(2021, 2, 17),
+                        LocalDate.of(2022, 2, 17),
                         LocalTime.of(7, 55, 17),
                         LocalTime.of(8, 56, 36),
                         LocalTime.of(1, 0, 27),
