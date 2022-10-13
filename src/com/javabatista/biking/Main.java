@@ -5,6 +5,7 @@ import com.javabatista.biking.repository.CyclingDayList;
 import com.javabatista.biking.repository.CyclingDayRepository;
 import com.javabatista.biking.service.MonthStats;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.HashSet;
@@ -26,23 +27,32 @@ public class Main {
 //        }
 //        System.out.println(days.size());
 
+        while (true) {
+            Integer year = selecionaAno();
 
-        Integer year = selecionaAno();
+            if (year == -1)
+                exit(0);
 
-        if (year == 1)
-            exit(0);
+            System.out.println();
 
-        System.out.println();
+            Integer month = selecionaMes(year);
 
-        Integer month = selecionaMes(year);
+            if (month == -1)
+                exit(0);
 
-        if (month == 1)
-            exit(0);
+            System.out.println();
 
-        System.out.println();
+            printInfo(year, month);
 
-        printInfo(year, month);
-
+            System.out.println();
+            System.out.println("Presione enter para continuar...");
+            Scanner scanner = new Scanner(System.in);
+            try {
+                System.in.read();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     public static Integer selecionaAno() {
@@ -56,12 +66,12 @@ public class Main {
             }
 
 
-            System.out.print("Escolha um ano (Digite 1 para sair):");
+            System.out.print("Escolha um ano (Digite -1 para sair):");
             Scanner scanner = new Scanner(System.in);
             Integer year = scanner.nextInt();
 
-            if (year == 1)
-                return 1;
+            if (year == -1)
+                return -1;
             if (years.contains(year))
                 return year;
             else {
@@ -90,12 +100,12 @@ public class Main {
                         System.out.printf(" - %s%n", month);
                     }
             );
-            System.out.print("Digite o número do mes(Digite 1 para sair):");
+            System.out.print("Digite o número do mês (Digite -1 para sair):");
             Scanner scanner = new Scanner(System.in);
             int month = scanner.nextInt();
 
-            if (month == 1)
-                return 1;
+            if (month == -1)
+                return -1;
 
             boolean isMonthValid = !(month > 12 || month < 1);
 
