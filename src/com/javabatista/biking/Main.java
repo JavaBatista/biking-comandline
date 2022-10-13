@@ -20,6 +20,13 @@ public class Main {
 
     public static void main(String[] args) {
 
+//        List<CyclingDay> days = CyclingDayList.createCyclingDayList();
+//        for ( CyclingDay day: days) {
+//            System.out.println(day);
+//        }
+//        System.out.println(days.size());
+
+
         Integer year = selecionaAno();
 
         if (year == 1)
