@@ -10,20 +10,26 @@ import java.util.stream.Collectors;
 
 public class CyclingDayRepository {
 
-    private List<CyclingDay> cyclingDayList = CyclingDayList.cyclingDayList;
+    public CyclingDayRepository() {
+        this.cyclingDayList = new CyclingDayList();
+        this.cyclingDayS = this.cyclingDayList.getCyclingDayList();
+    }
+
+    private CyclingDayList cyclingDayList;
+    private List<CyclingDay> cyclingDayS;
 
     public List<CyclingDay> findByDate(LocalDate date) {
-        return cyclingDayList.stream().filter( cyclingDay -> cyclingDay.getDate().equals(date)).collect(Collectors.toList());
+        return cyclingDayS.stream().filter( cyclingDay -> cyclingDay.getDate().equals(date)).collect(Collectors.toList());
     }
 
     public List<CyclingDay> findByYear(Integer year) {
-        return cyclingDayList.stream().filter(
+        return cyclingDayS.stream().filter(
                     cyclingDay -> cyclingDay.getDate().getYear() == year
                 ).collect(Collectors.toList());
     }
 
     public List<CyclingDay> findByMonthOfYear(LocalDate date) {
-         List<CyclingDay> byYear = cyclingDayList.stream().filter(
+         List<CyclingDay> byYear = cyclingDayS.stream().filter(
                 cyclingDay -> cyclingDay.getDate().getYear() == date.getYear()
         ).collect(Collectors.toList());
 
@@ -34,7 +40,7 @@ public class CyclingDayRepository {
 
     public Set<Integer> findYears() {
         Set<Integer> years = new HashSet<>();
-        for (CyclingDay cyclingDay: cyclingDayList) {
+        for (CyclingDay cyclingDay: cyclingDayS) {
             years.add(cyclingDay.getDate().getYear());
         }
 

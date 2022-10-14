@@ -9,15 +9,19 @@ import java.util.*;
 
 public class CyclingDayList {
 
-    public static final List<CyclingDay> cyclingDayList;
+    private List<CyclingDay> cyclingDayList;
 
-    private static Instant createInstant(LocalTime localTime, LocalDate localDate) {
+    public List<CyclingDay> getCyclingDayList() {
+        return createCyclingDayList();
+    }
+
+    private Instant createInstant(LocalTime localTime, LocalDate localDate) {
         return LocalDateTime.of(localDate, localTime)
                 .toInstant(ZoneId.systemDefault().getRules()
                         .getOffset(LocalDateTime.of(localDate, localTime)));
     }
 
-    private  static CyclingDay createCyclingDay( LocalDate date,
+    private  CyclingDay createCyclingDay( LocalDate date,
                                                  LocalTime startTime,
                                                  LocalTime finishTime,
                                                  LocalTime cyclingTime,
@@ -37,17 +41,17 @@ public class CyclingDayList {
                     );
     }
 
-    private static WindCondition randomWindCondition() {
+    private WindCondition randomWindCondition() {
         Random RANDOM = new Random();
         int pick = new Random().nextInt(WindCondition.values().length);
         return WindCondition.values()[pick];
     }
 
-    public static int random(int min, int max) {
+    private int random(int min, int max) {
         return min + (int)(Math.random() * ((max - min) + 1));
     }
 
-    private  static LocalTime cyclingTime(Double distance, Double avgSpeed) {
+    private   LocalTime cyclingTime(Double distance, Double avgSpeed) {
         Double time = distance / avgSpeed;
         double horas = Math.floor(time);
         double minutos = Math.floor((time - horas)*60);
@@ -55,14 +59,14 @@ public class CyclingDayList {
         return LocalTime.of( (int) horas, (int) minutos, 0);
     }
 
-    private  static LocalTime finishTime(LocalTime startTime, LocalTime cyclingTime) {
+    private   LocalTime finishTime(LocalTime startTime, LocalTime cyclingTime) {
 
         return startTime.plusHours(cyclingTime.getHour()).plusMinutes(cyclingTime.getMinute());
     }
 
 
 
-    public static List<CyclingDay> createCyclingDayList() {
+    private   List<CyclingDay> createCyclingDayList() {
         Random RANDOM = new Random();
 
         List<CyclingDay> daysList = new ArrayList<>(Collections.emptyList());
@@ -77,16 +81,7 @@ public class CyclingDayList {
         Double odometer = 0.0;
         String comments = "";
 
-//        System.out.println(actualDate);
-//        System.out.println(calendar.getTime());
-//        System.out.println(randomWindCondition());
-//        System.out.println(calendar.get(Calendar.DAY_OF_MONTH));
-
         while (!actualDate.equals(finalDate)) {
-
-//            System.out.println(actualDate);
-//            System.out.println(calendar.getTime());
-//            System.out.println(calendar.getActualMaximum(Calendar.DAY_OF_MONTH));
 
             Double distance = ((double) random(20, 30));
             Double avgSpeed = (double) random(18, 22);
@@ -117,10 +112,6 @@ public class CyclingDayList {
 
 
         return daysList;
-    }
-
-    static  {
-        cyclingDayList = createCyclingDayList();
     }
 
 }
